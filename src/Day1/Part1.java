@@ -18,8 +18,6 @@ public class Part1 {
             }
             Collections.sort(sigma);
             Collections.sort(alpha);
-            System.out.println(sigma);
-            System.out.println(alpha);
             int c = 0;
             for(int i=0; i<sigma.size(); i++){
                 c += Math.abs(sigma.get(i) - alpha.get(i));
