@@ -17,7 +17,7 @@ public class randomchimpevent {
         }
         return true;
     }
-    static boolean toPrint = false;
+    static final boolean toPrint = false;
     public static boolean checkString(String s){
         if(s.substring(0, 4).equals("mul(")){
             String s2[] = s.substring(4, s.length()).split(","); //Insane levels of trollage going on rn.
@@ -45,7 +45,7 @@ public class randomchimpevent {
                 if(toPrint) System.out.println(s2[0] + " is not an integer, returning false." + Arrays.toString(s2));
                 return false;
             }
-        }else{
+        } else {
             if(toPrint) System.out.println(s.substring(0, 4) + "is not mul(, returning false.");
             return false;
         }
