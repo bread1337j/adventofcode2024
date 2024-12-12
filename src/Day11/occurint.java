@@ -8,6 +8,10 @@ public class occurint {
             this.val = val;
             this.frq = 1; //if more than 1, then big issues.
     }
+    public occurint(long val, int frq){
+            this(val);
+            this.frq = frq;
+    }
     public String toString(){
             return "{" + val + "," + frq + "}";
     }

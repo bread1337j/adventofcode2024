@@ -24,6 +24,7 @@ public class Part1 {
     }
     public static void main(String[] args) {
         long start = System.nanoTime();
+        System.out.println(Arrays.toString(getDir(105)));
         try {
             Scanner sc = new Scanner(new File("src/Day6/Input.txt"));
             ArrayList<char[]> maze = new ArrayList<>();

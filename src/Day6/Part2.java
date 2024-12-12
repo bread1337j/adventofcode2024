@@ -41,7 +41,7 @@ public class Part2 {
             int loops = 0;
             int loop = 1;
             for(int i=0; i < maze.size(); i++){
-                System.out.println(i);
+                //System.out.println(i);
                 for(int j=0; j<maze.get(0).length; j++){
 
                     if(maze.get(i)[j] != '#' && maze.get(i)[j] != '^') {
@@ -56,7 +56,7 @@ public class Part2 {
                         int gux = gx;
                         int guy = gy;
                         maze.get(i)[j] = 'O';
-                        for (int holyhell = 0; holyhell < 10000; holyhell++) {
+                        for (int holyhell = 0; holyhell < 6000; holyhell++) {
                             try {
                                 int checkx = gux + getDir(dir)[0];
                                 int checky = guy + getDir(dir)[1];

@@ -3,7 +3,9 @@ package Day11;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Part2SCRAPPED {
     public static Node arrayToList(ArrayList<Long> a) {
@@ -31,6 +33,7 @@ public class Part2SCRAPPED {
             }
             return s;
     }
+
     public static void blink(Node starter) {
         while(starter != null) {
             long val = starter.val;
